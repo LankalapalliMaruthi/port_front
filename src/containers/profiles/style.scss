@@ -1,0 +1,58 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  &-icons {
+    display: flex;
+    flex-direction: column; // stack icons and resume button vertically
+    align-items: center;
+    gap: 20px;
+
+    .icon-row {
+      display: flex;
+      gap: 30px;
+
+      a {
+        text-decoration: none;
+
+        svg {
+          font-size: 3rem;
+          color: wheat;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: cadetblue;
+            transform: scale(1.1);
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+
+    .download-resume-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;                     // small gap between icon and text
+      text-decoration: none;
+      font-size: 1.4rem;            // larger font
+      font-weight: bold;
+      color: wheat;
+      border: 2px solid wheat;      // button border
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: cadetblue;
+        border-color: cadetblue;
+        background-color: rgba(95, 158, 160, 0.1);
+      }
+
+      .download-icon {
+        font-size: 1.4rem; // icon size aligned with text
+      }
+    }
+  }
+}

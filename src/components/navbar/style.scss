@@ -1,0 +1,218 @@
+// .navbar {
+//   background-color: var(--yellow-theme-background-color);
+//   height: 80px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 1.2rem;
+//   position: sticky;
+//   &-container {
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     height: inherit;
+//     padding: 0px 20px;
+//     flex: 1;
+//     &-logo{
+
+//         color: var(--yellow-theme-main-color);
+//         cursor: pointer;
+//     }
+//     &-menu{
+//       display:flex;
+//       list-style: none;
+//       text-align: center;
+//       &-item{
+//         line-height: 40px;
+//         margin-right: 1.5rem;
+//         font-size: 1.6rem;
+//         &::after{
+//           content:'';
+//           display: block;
+//           height: 3px;
+//           width:0;
+//           background:transparent;
+//           transition: all 0.5s ease;
+
+//         }
+//         &:hover::after{
+//           width: 100%;
+//           background:var(--yellow-theme-main-color);
+//         }
+//         &-links{
+//           color:var(--yellow-theme-main-color);
+//           text-decoration: none;
+//           padding: 0.5rem;
+//         }
+//       }
+//     }
+//   }
+  
+// }
+// .navIcon{
+//   display: none;
+// }
+
+// @media only screen and (max-width:768px){
+//   .navbar-container-menu{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     width: 100%;
+//     position: absolute;
+//     top: 80px;
+//     left:-110%;
+//     opacity:1;
+//     transition: all 0.5s ease;
+//     &.active{
+//       background:#181818;
+//       left: 0px;
+//       opacity: 1;}
+  
+//   &-item{
+//     border-bottom: 1px solid #282828;
+//     margin: 0px;
+//     padding: 20px  0px;
+//   }}
+//   .navIcon{
+//     display: block;
+//     cursor: pointer;
+//     color: var(--yellow-theme-main-color);
+//     padding-right: 20px;
+    
+    
+//   }
+// }
+/* components/Navbar.scss */
+// .navbar {
+//   position: fixed;
+//   width: 100%;
+//   height: 60px;
+//   background-color: #1e1e1e;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 0 20px;
+//   z-index: 10;
+
+//   &-logo {
+//     font-size: 1.5rem;
+//     color: #f9d342;
+//   }
+
+//   &-links {
+//     display: flex;
+//     gap: 20px;
+
+//     span {
+//       cursor: pointer;
+//       color: white;
+//       font-weight: bold;
+//       transition: color 0.3s;
+
+//       &:hover {
+//         color: #f9d342;
+//       }
+//     }
+//   }
+
+//   &-toggle {
+//     display: none;
+//     cursor: pointer;
+//     font-size: 1.5rem;
+//     color: white;
+//   }
+
+//   @media (max-width: 768px) {
+//     &-links {
+//       display: none;
+//       flex-direction: column;
+//       background: #222;
+//       position: absolute;
+//       top: 60px;
+//       left: 0;
+//       width: 100%;
+//       padding: 10px 0;
+//       gap: 10px;
+
+//       &.open {
+//         display: flex;
+//       }
+
+//       span {
+//         padding: 10px 20px;
+//       }
+//     }
+
+//     &-toggle {
+//       display: block;
+//     }
+//   }
+// }
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+
+  &-logo {
+    font-size: 1.5rem;
+    color: #f9d342;
+  }
+
+  &-links {
+    display: flex;
+    gap: 20px;
+
+    span {
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #f9d342;
+      }
+    }
+  }
+
+  &-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+
+    &-links {
+      display: none;
+      flex-direction: column;
+      background: #222;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      gap: 10px;
+
+      &.open {
+        display: flex;
+      }
+
+      span {
+        padding: 10px 20px;
+      }
+    }
+
+    &-toggle {
+      display: block;
+    }
+  }
+}
