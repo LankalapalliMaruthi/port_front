@@ -27,7 +27,7 @@ const Profile = () => {
           </a>
         </div>
         <a
-          href="https://drive.google.com/uc?export=download&id=1XCqmEyGLF-H1QANjwbCdT9gVUsIr8lI-"
+          href="maruthi-portfolio/public/Maruthi Lankalapalli.pdf"
           download="Maruthi_Lankalapalli_Resume.pdf"
           className="download-resume-link"
         >
