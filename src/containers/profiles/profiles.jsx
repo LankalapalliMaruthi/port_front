@@ -27,7 +27,7 @@ const Profile = () => {
           </a>
         </div>
         <a
-          href="maruthi-portfolio/public/Maruthi Lankalapalli.pdf"
+          href="/Maruthi Lankalapalli.pdf"
           download="Maruthi_Lankalapalli_Resume.pdf"
           className="download-resume-link"
         >
